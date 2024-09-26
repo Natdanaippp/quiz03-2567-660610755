@@ -18,6 +18,11 @@ export interface User {
   password: string;
   role: "ADMIN" | "SUPER_ADMIN";
 }
+export interface Database {
+  User: User[];
+  Message: Message[];
+  Room: Room[];
+}
 
 const originalDB = {
   rooms: [
